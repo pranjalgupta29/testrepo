@@ -6,6 +6,9 @@ from .models import Join
 def home(request):
     return render(request, 'pronagoback/home.html')
 
+def categories(request):
+    return render(request, 'pronagoback/clothing.html')
+
 
 def join(request):
     if request.method == "POST":

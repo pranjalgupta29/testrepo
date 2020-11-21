@@ -1,11 +1,12 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadgets</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <link rel="stylesheet" href="{% static 'pronagoback/style.css' %}">
+    <link rel="stylesheet" href="{% static 'pronagoback/dashboard.css' %}">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
@@ -15,14 +16,19 @@
     <nav id="slide-menu">
         <div class="wrap">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="clothing.html">Clothing</a></li>
-                <li><a href="footwear.html">Footwear</a></li>
-                <li><a href="bags.html">Bags</a> </li>
-                <li><a href="skincare.html">Skin Care</a> </li>
-                <li><a href="apps.html">Apps</a> </li>
-                <li><a href="gadgets.html" class="current">Gadgets</a> </li>
-            </ul>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="footwear.html">Footwear</a></li>
+                    <li><a href="bags.html">Bags</a> </li>
+                    <li><a href="skincare.html">Skin Care</a> </li>
+                    <li><a href="apps.html">Apps</a> </li>
+                    <li><a href="gadgets.html" class="current">Gadgets</a> </li>
+                    <li><a href="automobiles.html">Automobiles</a> </li>
+                    <li><a href="food.html">Food & Beverages</a> </li>
+                    <li><a href="aircon.html">Air Conditioners</a> </li>
+                    <li><a href="kitchenware.html" >Kitchenware</a> </li>
+                </ul>
         </div>
     </nav>
     <!-- Content panel -->
