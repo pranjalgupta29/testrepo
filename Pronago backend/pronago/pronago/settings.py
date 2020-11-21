@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pronago.urls.py'
+ROOT_URLCONF = 'pronago.urls'
 
 TEMPLATES = [
     {
