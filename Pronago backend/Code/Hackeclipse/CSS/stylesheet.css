@@ -1,0 +1,592 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700|Open+Sans:800);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;700&family=Raleway:wght@400;700&display=swap'); /*font-family: 'Raleway', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)*/
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image:linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+}
+
+
+@font-face{
+    font-family: nine;
+    src: url("../Fonts/nine.otf");
+    }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color:#fff;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(198, 60%, 50%); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -ms-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-moz-scrollbar {
+    width: 5px;
+}
+::-moz-scrollbar-track {
+    background-color:#fff;
+    border-radius: 2px;
+}
+::-moz-scrollbar-thumb {
+    background: hsl(198, 60%, 50%); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -ms-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.navynavprat{
+    background:linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navlink{
+    margin-right: 15px;
+    color: white;
+    border-radius: 15px;
+    transition: border 0.5s;
+    border-bottom: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navlink:hover{
+    color: white;
+    border-bottom: 2px solid hsl(198, 60%, 50%);
+    box-shadow: 0px 10px -14px 14px #FFF;
+-webkit-box-shadow: 0px 10px -14px 14px #FFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+          
+.custom-toggler.navbar-toggler {
+    border-color: white;
+} 
+          
+.custom-toggler.navbar-toggler:focus{
+    outline: none;
+}
+
+.backback {
+    background-color: black;
+    font-size: 350px;
+}
+
+.mountain p{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    font-size:30px;
+}
+
+.aboutback{
+    background: linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 20px #00000060;
+}
+
+.content-in p{
+    color: white;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media (orientation:landscape) and (min-width:760px)
+{
+    .content-in p{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 2px;
+}
+
+}
+
+
+
+/*--SVG--*/
+/* Main stuff */
+.text {
+    fill: none;
+    stroke-width: 6;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear; }
+    .text:nth-child(5n + 1) {
+      stroke: white;
+      -webkit-animation-delay: -1.2s;
+      animation-delay: -1.2s; }
+    .text:nth-child(5n + 2) {
+      stroke: green;
+      -webkit-animation-delay: -2.4s;
+      animation-delay: -2.4s; }
+    .text:nth-child(5n + 3) {
+      stroke: white;
+      -webkit-animation-delay: -3.6s;
+      animation-delay: -3.6s; }
+    .text:nth-child(5n + 4) {
+      stroke: #FF8C19;
+      -webkit-animation-delay: -4.8s;
+      animation-delay: -4.8s; }
+    .text:nth-child(5n + 5) {
+      stroke: white;
+      -webkit-animation-delay: -6s;
+      animation-delay: -6s; }
+  
+  @-webkit-keyframes stroke {
+    100% {
+      stroke-dashoffset: -400; } }
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: -400; } }
+  
+  
+  
+  .content {
+    position: relative;
+  }
+  
+  
+  @media only screen and (orientation:portrait)
+  {
+    .content{
+      height: auto;
+    }
+    svg{
+      left:25%;
+    }
+  }
+  
+  @media only screen and (orientation:landscape)
+  {
+      .content{   
+        padding-top: 20%;
+        height: auto;
+      }
+      svg{
+        left:26%;  
+      }
+  }
+  
+  
+  @media (max-device-width:1100px) and (orientation:portrait)
+  {
+    .content{
+      padding-top: 50%;
+    }
+  }
+  
+  
+  svg {
+    width: 50%;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font: 800 14.5em/1  'Open Sans', Impact;  
+  }
+
+  /*--SVG-END--*/
+
+
+.get-started{
+    border-radius:50px;
+    border:none;
+    background-image:linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    font-size:1.25em;
+    margin-top:20px;
+    cursor:pointer;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: background-color 0.5s;
+    box-shadow:0px 1px 1px 1px hsl(198, 60%, 50%);
+}
+
+.get-started:focus{
+    outline: none;
+}
+
+.get-started:hover{
+    background-image:linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+}
+
+.mountain{
+    padding-top: 300px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    width:100%;
+    background-image: url("https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/bg-curvy-desktop.svg");
+    background-position:center bottom;
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:2;
+}
+
+.mountain-words{
+    width: 80%;
+}
+
+@media only screen and (min-width:800px)
+{
+    .features{
+        display: grid;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4";
+        }
+}
+
+@media only screen and (max-width:800px)
+{
+    .features{
+        display: grid;
+        grid-template-areas: 
+        "box1" 
+        "box2"
+        "box3" 
+        "box4";
+        }
+}
+
+.tile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.access{
+    grid-area: box1;
+}
+
+.security{
+    grid-area: box2;
+}
+
+
+.real-time{
+    grid-area: box3;
+}
+
+.storage{
+    grid-area: box4;
+}
+
+.features img{
+    height:100px;
+}
+
+.tile h3{
+    color:hsl(0, 0%, 100%);
+    font-size:1.5em;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.access p, .real-time p, .storage p{
+color: white;
+letter-spacing: 1px;
+margin: 10px;
+width: 90%;
+border-radius: 15px;
+box-shadow: 2px 2px 4px hsl(198, 60%, 50%);
+padding: 20px;
+}
+
+.security p{
+    color: white;
+    letter-spacing: 1px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px hsl(198, 60%, 50%);
+    padding: 22px;
+}
+
+/*--Footer-Start--*/
+
+.footer{
+    padding: 30px;
+    background: linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+
+
+.footer .fgh:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.footer .fgh{
+    transition: border 0.5s;
+    padding:10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.footer span{
+    color: white;
+    position: relative;
+    top:-7px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.elementals .fa{
+margin-right: 15px;
+}
+
+.elementals1 .fa{
+    margin-right: 15px;
+}
+
+.elementals{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.elementals1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width:760px)
+{
+.elementals{
+    text-align: center;
+}
+.elementals1{
+    text-align: center;
+}
+.yui{
+    position: relative;
+    top: -20px;
+}
+}
+
+@media only screen and (max-width:760px)
+{
+.yui{
+    position: relative;
+    top: -10px;
+}
+}
+
+.elementals2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.elementals2 .fa{
+margin-right: 15px;
+margin-top:4px;
+margin-bottom: 4px;
+}
+
+/*--Footer-End--*/
+
+
+/*--Newsletter-Start--*/
+
+
+.newsletter{
+    background: linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
+    height: auto;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
+    box-shadow: 0 0 20px #00000060;
+  }
+  .newsletter h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  
+  .newsletter p{
+      color: hsl(198, 60%, 50%);
+      font-size: 17px;
+      margin: 10px 0;
+      letter-spacing: 2px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  
+  }
+
+.formio input{
+    border: none;
+}
+                
+.formio input:focus{
+    outline: none;
+}
+
+.formio{
+    font-size: 20px;
+    position: relative;
+    padding-top: 20px;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+@media only screen and (orientation:portrait)
+{
+  ::placeholder{
+      color:hsl(218, 28%, 15%);
+      font-size: 12px;
+  }
+  .formio input[type=email]{
+    width: 80%;
+  }
+
+  .formio input[type=email]:focus{
+    width: 100%;
+}
+
+}
+
+@media only screen and (orientation:landscape)
+{
+  ::placeholder{
+      color:hsl(218, 28%, 15%);
+      font-size: 20px;
+  }
+  .formio input[type=email]{
+    width: 50%;
+  }
+
+  .formio input[type=email]:focus{
+    width: 70%;
+}
+}
+                
+                
+.formio input[type=email]{
+    border-bottom: 1px solid hsl(218, 28%, 15%);
+    background-color: transparent;
+    color: hsl(198, 60%, 50%);
+    transition: width 0.4s ease-in-out;
+    z-index: 1;
+    position: relative;
+    }
+                
+                
+.formio input[type=submit]{
+    background-color: transparent;
+    border: 2px solid  hsl(198, 60%, 50%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:  hsl(198, 60%, 50%);
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.4s;
+}
+                
+.formio input[type=submit]:hover{
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+}
+                
+.formio label{
+    font-size: 1.5rem;
+    color: hsl(198, 60%, 50%);
+    transition: opacity 250ms ease, top 250ms ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+                
+.formio input::placeholder{
+    transition: opacity 250ms ease;
+    opacity: 1;
+}
+                
+.formio input:focus::placeholder, input:valid::placeholder{
+    opacity: 0;
+}
+
+.formio input:focus + label, input:valid + label{
+    opacity: 1;
+    top: -1rem;
+}
+  
+.whitecontain{
+  position: relative;
+  border-radius: .4em;
+  background-color: white;
+  height: auto;
+  padding:20px;
+  color: grey;
+}
+  
+.whitecontain:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: white;
+  border-left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+/*--Newsletter--*/
